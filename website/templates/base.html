@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Human Social Media Website</title>
+	<title>{% block title %}Human Social Media Website Portal for Humans on Earth{% endblock %}</title>
 </head>
 <body>
+	<a href='/auth/login'>Log in</a>&nbsp;
+	<a href='/'>Log out</a>&nbsp;
+	<a href='/'>Home</a>&nbsp; <br>
+	<h1>{% block content %} We are aliens. {% endblock %}<h1>
 </body>
 </html>
