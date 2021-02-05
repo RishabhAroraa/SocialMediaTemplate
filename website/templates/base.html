@@ -4,9 +4,10 @@
 	<title>{% block title %}Human Social Media Website Portal for Humans on Earth{% endblock %}</title>
 </head>
 <body>
+	<a href='/auth/signup'>Sign up</a>&nbsp;
 	<a href='/auth/login'>Log in</a>&nbsp;
-	<a href='/'>Log out</a>&nbsp;
+	<a href='/auth/logout'>Log out</a>&nbsp;
 	<a href='/'>Home</a>&nbsp; <br>
-	<h1>{% block content %}{% endblock %}<h1>
+	{% block content %}{% endblock %}
 </body>
 </html>
