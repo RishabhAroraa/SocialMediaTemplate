@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} Create your human social media account {% endblock %}
+{% block content %}
+	<form method="POST">
+	<h3> Sign up </h3>
+		<label for='email'>Email id: </label>
+		<input type='email' id='email' name='email' placeholder='human@earth.com'><br><br>
+		<label for='uname'>Username: </label>
+		<input type='text' id='uname' name='uname' placeholder='human'><br><br>
+		<label for='passwd'>Password: </label>
+		<input type='password' id='passwd' name='passwd' placeholder='********'><br><br>
+		<label for='passwd'>Confirm Password: </label>
+		<input type='password' id='passwd2' name='passwd2' placeholder='********'><br><br>
+		<button type='submit'>Sign up</button>
+</form>
+{% endblock %}
