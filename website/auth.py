@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, flash
 
 auth = Blueprint('auth', __name__)
 
@@ -11,6 +11,9 @@ def signup():
 		passwd = data.get('passwd')
 		passwd2 = data.get('passwd2')
 		print('New signup-> \nName: {}\nPassword: {}\nEmail: {}'.format(uname, passwd, email))
+
+		if(passwd != passwd2):
+			flash("Passwords do not match.", category='error')
 
 	return render_template('signup.html')
 
