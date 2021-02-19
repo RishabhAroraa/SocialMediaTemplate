@@ -11,7 +11,7 @@ def signup():
 		passwd = data.get('passwd')
 		passwd2 = data.get('passwd2')
 
-		#debug
+		#log
 		print('New signup-> \nName: {}\nPassword: {}\nEmail: {}'.format(uname, passwd, email))
 
 		if(passwd != passwd2):
@@ -19,10 +19,6 @@ def signup():
 
 	return render_template('signup.html')
 
-
-'''
-login
-'''
 
 @auth.route('login', methods=['GET', 'POST'])
 def login():
